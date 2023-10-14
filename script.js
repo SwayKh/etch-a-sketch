@@ -1,29 +1,34 @@
-const grid = document.querySelector('.grid')
+const grid = document.querySelector('.container')
 const resizeButton = document.querySelector('#resize-button')
-const pixel = document.querySelectorAll('.pixel')
 
-let size = 16
+let size = 2
 
 resizeButton.addEventListener('click', () => {
     size = prompt("Size of the grid: ", "16")
     console.log(size)
-    renderGrid(size)
+    renderGrid()
 })
 
 function renderGrid() {
-    pixel.forEach(element => {
-        grid.removeChild(element)
-    });
-    for (let i = 0; i <= size ** 2; i++) {
+    resetGrid()
+    for (let i = 1; i <= size ** 2; i++) {
         const pixelDiv = document.createElement("div")
         pixelDiv.className = "pixel"
-        pixelDiv.style.minWidth = 40 + "px"
-        pixelDiv.style.minHeight = 40 + "px"
-        pixelDiv.style.backgroundColor = "black"
+        pixelDiv.textContent = i
+        pixelDiv.style.color = "white"
+        pixelDiv.style.backgroundColor = "#333333"
+        pixelDiv.style.textAlign = "center"
+        pixelDiv.style.minWidth = String(grid.style.minWidth / size) + "px"
+        pixelDiv.style.minHeight = String(grid.style.minHeight / size) + "px"
+        pixelDiv.style.aspectRatio = "1/1"
         grid.appendChild(pixelDiv)
     }
 }
 renderGrid()
 
-
-
+function resetGrid() {
+    const pixel = document.querySelectorAll('.pixel')
+    pixel.forEach((element) => {
+        grid.removeChild(element)
+    });
+}

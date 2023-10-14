@@ -1,33 +1,14 @@
-* {
-    border: 1px solid #333333;
-}
-
 body {
-    font-family: "Roboto", 'Times New Roman', Times, serif sans-serif;
-    font-size: 32px;
+    font-family: 'Roboto', 'Times New Roman', Times, serif sans-serif;
     margin: 0;
     padding: 0;
     height: 100dvh;
+    gap: 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 25px;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 640px;
-    min-height: 640px;
 }
 
 .header {
@@ -36,6 +17,7 @@ body {
     align-items: center;
     gap: 12px;
     min-width: 600px;
+    margin-top: auto;
 }
 
 #name,
@@ -54,4 +36,14 @@ body {
     text-align: center;
     margin-top: auto;
     padding: 5px;
+    width: 100%;
+}
+
+.container {
+    border: 5px solid #333333;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
