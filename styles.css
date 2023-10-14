@@ -41,9 +41,22 @@ body {
 
 .container {
     border: 5px solid #333333;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    height: 500px;
+    /* max-width: 500px; */
+    /* max-height: 500px; */
+    min-width: 500px;
+    min-height: 500px;
+}
+
+.pixel {
+    text-align: center;
+    color: white;
+    background-color: #333333;
+    border: 1px solid red;
+    aspect-ratio: 1/1;
 }
