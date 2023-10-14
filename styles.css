@@ -45,8 +45,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    /* gap: 1px; */
     width: 500px;
     height: 500px;
+    /* flex: auto; */
     /* max-width: 500px; */
     /* max-height: 500px; */
     min-width: 500px;
@@ -54,9 +56,6 @@ body {
 }
 
 .pixel {
-    text-align: center;
-    color: white;
-    background-color: #333333;
-    border: 1px solid red;
+    background-color: white;
     aspect-ratio: 1/1;
 }
