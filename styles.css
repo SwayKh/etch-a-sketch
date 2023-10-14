@@ -26,8 +26,8 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    min-width: 600px;
-    min-height: 600px;
+    min-width: 640px;
+    min-height: 640px;
 }
 
 .header {
@@ -41,7 +41,6 @@ body {
 #name,
 #clear-button,
 #resize-button {
-    /* align-self: flex-end; */
     color: #333333;
     font-size: 24px;
     font-weight: 500;
@@ -55,5 +54,4 @@ body {
     text-align: center;
     margin-top: auto;
     padding: 5px;
-
 }
