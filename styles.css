@@ -1,0 +1,26 @@
+body {
+    font-family: "Roboto", 'Times New Roman', Times, serif sans-serif;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container {
+    margin: 50px;
+}
+
+.footer {
+    color: #333333;
+    background-color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 5px;
+    font-size: 18px;
+}
